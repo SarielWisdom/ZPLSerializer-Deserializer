@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-
-namespace ZPLDeserialiser.library.Models
+﻿namespace ZPLDeserializer.library.Models
 {
     /// <summary>
     /// Fournit une méthode pour parser un ZPL en supposant que toutes 

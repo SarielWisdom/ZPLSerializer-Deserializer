@@ -1,4 +1,4 @@
-﻿namespace ZPLDeserialiser.library
+﻿namespace ZPLDeserializer.library
 {
     /// <summary>
     /// Generic class representing any zpl command, 
