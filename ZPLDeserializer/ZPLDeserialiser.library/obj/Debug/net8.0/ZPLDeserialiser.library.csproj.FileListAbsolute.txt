@@ -1,0 +1,11 @@
+C:\Users\hugoe\Desktop\ZPL\ZPL\ZPLDeserialiser.library\bin\Debug\net8.0\ZPLDeserialiser.library.deps.json
+C:\Users\hugoe\Desktop\ZPL\ZPL\ZPLDeserialiser.library\bin\Debug\net8.0\ZPLDeserialiser.library.dll
+C:\Users\hugoe\Desktop\ZPL\ZPL\ZPLDeserialiser.library\bin\Debug\net8.0\ZPLDeserialiser.library.pdb
+C:\Users\hugoe\Desktop\ZPL\ZPL\ZPLDeserialiser.library\obj\Debug\net8.0\ZPLDeserialiser.library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hugoe\Desktop\ZPL\ZPL\ZPLDeserialiser.library\obj\Debug\net8.0\ZPLDeserialiser.library.AssemblyInfoInputs.cache
+C:\Users\hugoe\Desktop\ZPL\ZPL\ZPLDeserialiser.library\obj\Debug\net8.0\ZPLDeserialiser.library.AssemblyInfo.cs
+C:\Users\hugoe\Desktop\ZPL\ZPL\ZPLDeserialiser.library\obj\Debug\net8.0\ZPLDeserialiser.library.csproj.CoreCompileInputs.cache
+C:\Users\hugoe\Desktop\ZPL\ZPL\ZPLDeserialiser.library\obj\Debug\net8.0\ZPLDeserialiser.library.dll
+C:\Users\hugoe\Desktop\ZPL\ZPL\ZPLDeserialiser.library\obj\Debug\net8.0\refint\ZPLDeserialiser.library.dll
+C:\Users\hugoe\Desktop\ZPL\ZPL\ZPLDeserialiser.library\obj\Debug\net8.0\ZPLDeserialiser.library.pdb
+C:\Users\hugoe\Desktop\ZPL\ZPL\ZPLDeserialiser.library\obj\Debug\net8.0\ref\ZPLDeserialiser.library.dll

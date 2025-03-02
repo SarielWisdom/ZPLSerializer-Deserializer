@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZPLDeserializer.test", "ZPLDeserialiser.test\ZPLDeserializer.test.csproj", "{67122D45-E718-4B61-9142-F0520DBF81A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZPLDeserializer.library", "ZPLDeserialiser.library\ZPLDeserializer.library.csproj", "{47544E70-90D1-40FD-86C4-DF17D713486A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67122D45-E718-4B61-9142-F0520DBF81A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67122D45-E718-4B61-9142-F0520DBF81A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67122D45-E718-4B61-9142-F0520DBF81A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67122D45-E718-4B61-9142-F0520DBF81A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47544E70-90D1-40FD-86C4-DF17D713486A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47544E70-90D1-40FD-86C4-DF17D713486A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47544E70-90D1-40FD-86C4-DF17D713486A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47544E70-90D1-40FD-86C4-DF17D713486A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95FEBA9B-1A5F-4E42-B4FB-C3DF724E0FE8}
+	EndGlobalSection
+EndGlobal

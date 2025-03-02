@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ZPLDeserialiser.test/1.0.0": {
+        "dependencies": {
+          "ZPLDeserialiser.library": "1.0.0"
+        },
+        "runtime": {
+          "ZPLDeserialiser.test.dll": {}
+        }
+      },
+      "ZPLDeserialiser.library/1.0.0": {
+        "runtime": {
+          "ZPLDeserialiser.library.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ZPLDeserialiser.test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ZPLDeserialiser.library/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
