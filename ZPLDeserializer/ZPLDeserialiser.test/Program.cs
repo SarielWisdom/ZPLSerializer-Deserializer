@@ -57,7 +57,8 @@ namespace ZPLDeserialiser.library.Tests
             List<ZPLCommand> allCommands = ZPLParser.ParseAllCommands(zpl);
 
             sw.Stop();
-            Console.WriteLine($"Elapsed time: {sw.ElapsedMilliseconds} ms");
+            TimeSpan elapsedTime = sw.Elapsed;
+            Console.WriteLine($"Elapsed time: {elapsedTime.TotalMilliseconds} ms");
 
             // Display results
             Console.WriteLine("=== Found commands ===");
