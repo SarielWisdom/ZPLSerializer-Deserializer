@@ -1,82 +1,134 @@
-﻿namespace ZPLDeserialiser.library.Models
+﻿namespace ZPLDeserializer.library.Models
 {
+    /// <summary>
+    /// Fournit une méthode pour parser un ZPL en supposant que toutes 
+    /// les commandes ont un identifiant EXACT de deux lettres (ex: ^FO, ^FD, ^CF...).
+    /// </summary>
     public static class ZPLParser
     {
         /// <summary>
-        /// Parse a ZPL assuming that ALL commands have an EXACT 2-letter identifier.
-        /// Examples: ^FO, ^FD, ^FS, ^GB, ^CF, ^XA, ^XZ, ...
+        /// Analyse la chaîne ZPL et renvoie une liste ordonnée de commandes (ZPLCommand).
+        /// Les identifiants ^FD et ^FX ne seront pas subdivisés par virgule.
         /// </summary>
+        /// <param name="zpl">
+        /// Chaîne ZPL contenant des commandes à deux lettres (^FO, ^FD, ^FS, ^GB, ^CF, ^XA, ^XZ...).
+        /// </param>
+        /// <returns>Une liste de ZPLCommand dans l'ordre d'apparition.</returns>
+        /// <remarks>
+        /// Exemple : "^FO50,50^FDHello^FS^XZ" 
+        /// renverra 4 commandes : FO, FD, FS, XZ.
+        /// </remarks>
         public static List<ZPLCommand> ParseAllCommands(string zpl)
         {
-            var commands = new List<ZPLCommand>();
-            int i = 0;
-            int length = zpl.Length;
-
-            while (i < length)
+            // Sécurité : on gère le cas d'une chaîne nulle ou vide
+            if (string.IsNullOrEmpty(zpl))
             {
-                if (zpl[i] == '^')
+                return new List<ZPLCommand>();
+            }
+
+            var commands = new List<ZPLCommand>();
+
+            int currentIndex = 0;
+            int totalLength = zpl.Length;
+
+            while (currentIndex < totalLength)
+            {
+                // Repère un caret '^'
+                if (zpl[currentIndex] == '^')
                 {
-                    // S'assurer qu'on peut lire 2 lettres
-                    if (i + 2 < length)
+                    // Vérifie qu'il reste de la place pour lire 2 lettres
+                    if (currentIndex + 2 < totalLength)
                     {
-                        // Lire identifiant
-                        string identifier = zpl.Substring(i + 1, 2);
-                        i += 3; // Skip '^XX'
+                        // Lecture de l'identifiant sur 2 caractères
+                        string identifier = zpl.Substring(currentIndex + 1, 2);
+                        currentIndex += 3; // On avance après '^XX'
 
-                        // Collecter paramSegment jusqu'au prochain '^'
-                        int paramStart = i;
-                        while (i < length && zpl[i] != '^')
-                            i++;
-
-                        // i pointe sur '^' ou length
-                        int segLength = i - paramStart;
-                        string paramSegment = zpl.Substring(paramStart, segLength).Trim();
-
-                        List<string> paramList;
-                        if (identifier.Equals("FD", StringComparison.OrdinalIgnoreCase)
-                            || identifier.Equals("FX", StringComparison.OrdinalIgnoreCase))
+                        // Recherche la portion de texte jusqu'au prochain '^' ou la fin
+                        int segmentStart = currentIndex;
+                        while (currentIndex < totalLength && zpl[currentIndex] != '^')
                         {
-                            // Conserver tout le paramSegment en un seul bloc
+                            currentIndex++;
+                        }
+
+                        // On récupère la portion des "paramètres" bruts
+                        int segmentLength = currentIndex - segmentStart;
+                        string paramSegment = zpl
+                            .Substring(segmentStart, segmentLength)
+                            .Trim();
+
+                        // Selon la commande, on parse différemment
+                        List<string> paramList;
+                        if (IsFullTextCommand(identifier))
+                        {
+                            // ^FD ou ^FX => on ne découpe pas par virgule
                             paramList = new List<string> { paramSegment };
                         }
                         else
                         {
-                            // Découper manuellement par virgule
-                            paramList = new List<string>();
-                            int start = 0;
-                            for (int k = 0; k < paramSegment.Length; k++)
-                            {
-                                if (paramSegment[k] == ',')
-                                {
-                                    if (k > start)
-                                    {
-                                        paramList.Add(paramSegment.Substring(start, k - start).Trim());
-                                    }
-                                    start = k + 1;
-                                }
-                            }
-                            // Dernier param
-                            if (start < paramSegment.Length)
-                            {
-                                paramList.Add(paramSegment.Substring(start).Trim());
-                            }
+                            // Toutes les autres commandes => découpe par virgule
+                            paramList = SplitParamSegmentByComma(paramSegment);
                         }
 
+                        // On crée la commande et on l'ajoute à la liste
                         commands.Add(new ZPLCommand(identifier, paramList));
                     }
                     else
                     {
-                        // Fin de chaîne, pas de place pour identifiant
+                        // Il ne reste pas assez de caractères pour un identifiant 2 lettres
                         break;
                     }
                 }
                 else
                 {
-                    i++;
+                    // Si le caractère n'est pas '^', on continue d'avancer
+                    currentIndex++;
                 }
             }
 
             return commands;
+        }
+
+        /// <summary>
+        /// Indique si l'identifiant correspond à une commande qui doit conserver 
+        /// l'intégralité de la chaîne (notamment ^FD, ^FX) sans découpage.
+        /// </summary>
+        private static bool IsFullTextCommand(string identifier)
+        {
+            // On autorise l'utilisation insensible à la casse
+            return identifier.Equals("FD", StringComparison.OrdinalIgnoreCase)
+                || identifier.Equals("FX", StringComparison.OrdinalIgnoreCase);
+        }
+
+        /// <summary>
+        /// Découpe une chaîne en segments, en séparant par virgule, 
+        /// puis en supprimant les espaces autour de chaque segment.
+        /// </summary>
+        private static List<string> SplitParamSegmentByComma(string paramSegment)
+        {
+            var result = new List<string>();
+            int start = 0;
+
+            for (int i = 0; i < paramSegment.Length; i++)
+            {
+                if (paramSegment[i] == ',')
+                {
+                    if (i > start)
+                    {
+                        string trimmedPart = paramSegment.Substring(start, i - start).Trim();
+                        result.Add(trimmedPart);
+                    }
+                    start = i + 1;
+                }
+            }
+
+            // Ajout du dernier paramètre s'il existe
+            if (start < paramSegment.Length)
+            {
+                string lastPart = paramSegment.Substring(start).Trim();
+                result.Add(lastPart);
+            }
+
+            return result;
         }
     }
 }

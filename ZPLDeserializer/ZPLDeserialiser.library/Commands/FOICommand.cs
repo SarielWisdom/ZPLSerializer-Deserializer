@@ -1,6 +1,4 @@
-﻿using ZPLDeserialiser.library.Models;
-
-namespace ZPLDeserialiser.library
+﻿namespace ZPLDeserializer.library
 {
     /// <summary>
     /// ZPL command ^FO: defines the field position (X, Y) and alignment.
