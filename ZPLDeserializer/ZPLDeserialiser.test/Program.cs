@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
-using ZPLDeserialiser.library.Models;
+using ZPLDeserializer.library.Models;
 
-namespace ZPLDeserialiser.library.Tests
+namespace ZPLDeserializer.library.Tests
 {
     public class Program
     {
