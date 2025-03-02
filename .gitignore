@@ -1,0 +1,9 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ZPLSerializer-Deserializer/v17
+/ZPLDeserializer/ZPLDeserialiser.library/bin
+/ZPLDeserializer/ZPLDeserialiser.test/bin
+/ZPLDeserializer/ZPLDeserialiser.library/obj/Release/net8.0
+/ZPLDeserializer/.vs/ZPL

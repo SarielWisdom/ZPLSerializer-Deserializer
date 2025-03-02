@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hugoe\\Desktop\\ZPL\\ZPL\\ZPLDeserialiser.library\\ZPLDeserializer.library.csproj": {}
+    "C:\\Users\\hugoe\\Source\\Repos\\ZPLSerializer-Deserializer\\ZPLDeserializer\\ZPLDeserialiser.library\\ZPLDeserializer.library.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hugoe\\Desktop\\ZPL\\ZPL\\ZPLDeserialiser.library\\ZPLDeserializer.library.csproj": {
+    "C:\\Users\\hugoe\\Source\\Repos\\ZPLSerializer-Deserializer\\ZPLDeserializer\\ZPLDeserialiser.library\\ZPLDeserializer.library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hugoe\\Desktop\\ZPL\\ZPL\\ZPLDeserialiser.library\\ZPLDeserializer.library.csproj",
+        "projectUniqueName": "C:\\Users\\hugoe\\Source\\Repos\\ZPLSerializer-Deserializer\\ZPLDeserializer\\ZPLDeserialiser.library\\ZPLDeserializer.library.csproj",
         "projectName": "ZPLDeserializer.library",
-        "projectPath": "C:\\Users\\hugoe\\Desktop\\ZPL\\ZPL\\ZPLDeserialiser.library\\ZPLDeserializer.library.csproj",
+        "projectPath": "C:\\Users\\hugoe\\Source\\Repos\\ZPLSerializer-Deserializer\\ZPLDeserializer\\ZPLDeserialiser.library\\ZPLDeserializer.library.csproj",
         "packagesPath": "C:\\Users\\hugoe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hugoe\\Desktop\\ZPL\\ZPL\\ZPLDeserialiser.library\\obj\\",
+        "outputPath": "C:\\Users\\hugoe\\Source\\Repos\\ZPLSerializer-Deserializer\\ZPLDeserializer\\ZPLDeserialiser.library\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hugoe\\AppData\\Roaming\\NuGet\\NuGet.Config",

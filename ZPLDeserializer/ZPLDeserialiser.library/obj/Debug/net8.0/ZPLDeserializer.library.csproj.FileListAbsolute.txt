@@ -1,0 +1,12 @@
+C:\Users\hugoe\Source\Repos\ZPLSerializer-Deserializer\ZPLDeserializer\ZPLDeserialiser.library\bin\Debug\net8.0\ZPLDeserializer.library.deps.json
+C:\Users\hugoe\Source\Repos\ZPLSerializer-Deserializer\ZPLDeserializer\ZPLDeserialiser.library\bin\Debug\net8.0\ZPLDeserializer.library.dll
+C:\Users\hugoe\Source\Repos\ZPLSerializer-Deserializer\ZPLDeserializer\ZPLDeserialiser.library\bin\Debug\net8.0\ZPLDeserializer.library.pdb
+C:\Users\hugoe\Source\Repos\ZPLSerializer-Deserializer\ZPLDeserializer\ZPLDeserialiser.library\obj\Debug\net8.0\ZPLDeserializer.library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hugoe\Source\Repos\ZPLSerializer-Deserializer\ZPLDeserializer\ZPLDeserialiser.library\obj\Debug\net8.0\ZPLDeserializer.library.AssemblyInfoInputs.cache
+C:\Users\hugoe\Source\Repos\ZPLSerializer-Deserializer\ZPLDeserializer\ZPLDeserialiser.library\obj\Debug\net8.0\ZPLDeserializer.library.AssemblyInfo.cs
+C:\Users\hugoe\Source\Repos\ZPLSerializer-Deserializer\ZPLDeserializer\ZPLDeserialiser.library\obj\Debug\net8.0\ZPLDeserializer.library.csproj.CoreCompileInputs.cache
+C:\Users\hugoe\Source\Repos\ZPLSerializer-Deserializer\ZPLDeserializer\ZPLDeserialiser.library\obj\Debug\net8.0\ZPLDeserializer.library.sourcelink.json
+C:\Users\hugoe\Source\Repos\ZPLSerializer-Deserializer\ZPLDeserializer\ZPLDeserialiser.library\obj\Debug\net8.0\ZPLDeserializer.library.dll
+C:\Users\hugoe\Source\Repos\ZPLSerializer-Deserializer\ZPLDeserializer\ZPLDeserialiser.library\obj\Debug\net8.0\refint\ZPLDeserializer.library.dll
+C:\Users\hugoe\Source\Repos\ZPLSerializer-Deserializer\ZPLDeserializer\ZPLDeserialiser.library\obj\Debug\net8.0\ZPLDeserializer.library.pdb
+C:\Users\hugoe\Source\Repos\ZPLSerializer-Deserializer\ZPLDeserializer\ZPLDeserialiser.library\obj\Debug\net8.0\ref\ZPLDeserializer.library.dll
