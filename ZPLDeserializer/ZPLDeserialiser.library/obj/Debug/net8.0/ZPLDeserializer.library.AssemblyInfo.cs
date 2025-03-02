@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZPLDeserializer.library")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ecdaddeadc05234ceff31fc0a17f064fb41c8116")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZPLDeserializer.library")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZPLDeserializer.library")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

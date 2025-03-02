@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hugoe\\Desktop\\ZPL\\ZPL\\ZPLDeserialiser.test\\ZPLDeserializer.test.csproj",
+      "projectUniqueName": "C:\\Users\\hugoe\\Source\\Repos\\ZPLSerializer-Deserializer\\ZPLDeserializer\\ZPLDeserialiser.test\\ZPLDeserializer.test.csproj",
       "projectName": "ZPLDeserializer.test",
-      "projectPath": "C:\\Users\\hugoe\\Desktop\\ZPL\\ZPL\\ZPLDeserialiser.test\\ZPLDeserializer.test.csproj",
+      "projectPath": "C:\\Users\\hugoe\\Source\\Repos\\ZPLSerializer-Deserializer\\ZPLDeserializer\\ZPLDeserialiser.test\\ZPLDeserializer.test.csproj",
       "packagesPath": "C:\\Users\\hugoe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hugoe\\Desktop\\ZPL\\ZPL\\ZPLDeserialiser.test\\obj\\",
+      "outputPath": "C:\\Users\\hugoe\\Source\\Repos\\ZPLSerializer-Deserializer\\ZPLDeserializer\\ZPLDeserialiser.test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hugoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,8 +54,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\hugoe\\Desktop\\ZPL\\ZPL\\ZPLDeserialiser.library\\ZPLDeserializer.library.csproj": {
-              "projectPath": "C:\\Users\\hugoe\\Desktop\\ZPL\\ZPL\\ZPLDeserialiser.library\\ZPLDeserializer.library.csproj"
+            "C:\\Users\\hugoe\\Source\\Repos\\ZPLSerializer-Deserializer\\ZPLDeserializer\\ZPLDeserialiser.library\\ZPLDeserializer.library.csproj": {
+              "projectPath": "C:\\Users\\hugoe\\Source\\Repos\\ZPLSerializer-Deserializer\\ZPLDeserializer\\ZPLDeserialiser.library\\ZPLDeserializer.library.csproj"
             }
           }
         }
